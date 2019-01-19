@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints  xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"  version="2.0">
+	<endpoint
+      name="serverStatus"
+      implementation="org.scientific.school.services.impl.ServerStatusImpl"
+      url-pattern="/services/serverStatus"/>
+      
+      <endpoint
+      name="osStatus"
+      implementation="org.scientific.school.services.impl.OSHandlerImpl"
+      url-pattern="/services/osStatus"/>
+</endpoints>

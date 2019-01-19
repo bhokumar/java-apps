@@ -1,0 +1,9 @@
+.git
+README.md
+*.class
+target
+.settings
+.metadata
+RemoteSystemTempFiles
+.classpath
+.project

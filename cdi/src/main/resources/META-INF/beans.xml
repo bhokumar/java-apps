@@ -1,0 +1,20 @@
+<beans xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+	<interceptors>
+		<class>com.axway.dojo.cdi.interceptor.SecurityManager</class>
+	</interceptors>
+	
+	<interceptors>
+		<class>org.bhoopendra.app.cdi.interceptors.AuthenticationIntercepter
+		</class>
+	</interceptors>
+	
+	<interceptors>
+		<class>org.bhoopendra.app.cdi.interceptors.LoggingIntercepter</class>
+	</interceptors>
+	<decorators>
+		<class>com.axway.dojo.cdi.decorator.BarSecuredImpl</class>
+	</decorators>
+	
+	<!-- <alternatives> <class>com.axway.dojo.cdi.alternative.BarMock</class> 
+		</alternatives> -->
+</beans>
